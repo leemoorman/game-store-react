@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/leemoorman/game-store-react/static/css/main.33c62bdd.css",
+    "main.js": "/leemoorman/game-store-react/static/js/main.900c21f5.js",
+    "static/media/xbox-one.png": "/leemoorman/game-store-react/static/media/xbox-one.c0714ba1237c4aa63ce3.png",
+    "static/media/game.png": "/leemoorman/game-store-react/static/media/game.d2b5994aa084d85e601e.png",
+    "static/media/founder.png": "/leemoorman/game-store-react/static/media/founder.9b11b061fb098e9daff7.png",
+    "static/media/tournyorganizer.png": "/leemoorman/game-store-react/static/media/tournyorganizer.2eb35e90549707e26493.png",
+    "static/media/employee.png": "/leemoorman/game-store-react/static/media/employee.0dfdbf6a9181d7697d7a.png",
+    "static/media/columbiagamehub.png": "/leemoorman/game-store-react/static/media/columbiagamehub.9ecace4f02348d853521.png",
+    "static/media/tournament.png": "/leemoorman/game-store-react/static/media/tournament.dc43d6b96cc721d32c57.png",
+    "static/media/sale.png": "/leemoorman/game-store-react/static/media/sale.e30dac85160b18dc39ad.png",
+    "index.html": "/leemoorman/game-store-react/index.html",
+    "main.33c62bdd.css.map": "/leemoorman/game-store-react/static/css/main.33c62bdd.css.map",
+    "main.900c21f5.js.map": "/leemoorman/game-store-react/static/js/main.900c21f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33c62bdd.css",
+    "static/js/main.900c21f5.js"
+  ]
+}
