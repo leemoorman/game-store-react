@@ -1,0 +1,25 @@
+
+.product-card {
+    border: 10px solid #00006b;
+    border-radius: 25px;
+    padding: 1rem;
+    width: 90%;
+    height: auto;
+    min-width: 250px;
+    max-width: 350px;
+    text-align: center;
+}
+  
+.product-card img {
+    width: 90%;
+    height: 50%;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+  
+.product-info p {
+    text-align: left;
+    height: fit-content;
+    padding-bottom: 50%;
+}

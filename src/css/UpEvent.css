@@ -1,0 +1,39 @@
+.up-event {
+    color: white;
+    margin: 2rem 0;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    justify-content: center;
+}
+  
+.up-event-items{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+  
+.up-event p{
+    padding: 1rem;
+    color: black;
+    max-width: 400px;
+    max-height: 200px;
+}
+  
+.up-item {
+    background-color: #00006b;
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+    min-width: 200px;
+    max-width: 400px;
+    height: 230px;
+}
+  
+.up-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}

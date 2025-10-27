@@ -1,0 +1,49 @@
+#store-container {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+#products {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    flex: 1;
+}
+  
+#sidebar {
+    width: 200px;
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+}
+  
+#sidebar h3 {
+    margin: 1rem 0;
+}
+  
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+  
+#sidebar li {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+  
+#active {
+    background-color: #e6f0ff;
+    border-left: 3px solid #00006b;
+}
+  
+#sidebar :hover{
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 813px){
+    #products{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
