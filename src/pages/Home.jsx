@@ -1,5 +1,6 @@
 import './../css/Home.css';
 import Item from './../components/Item';
+import Slideshow from './../components/Slideshow'
 import playstation5 from './../images/playstation5.jpg';
 import game from './../images/game.png';
 import controller from './../images/controller.png';
@@ -10,6 +11,7 @@ const Home = () =>{
     return(
         <main>
             <h1 id="sc">We supply all game related needs at a great price in Columbia, South Carolina</h1>
+            <Slideshow />
             <section className="main-content">
                 <h2>STORE  <span>Available for in–store pick up or delivery</span></h2>
                 <div className="items">

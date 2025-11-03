@@ -1,7 +1,7 @@
 #main-nav {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     padding: 0.5rem;
 }
   
@@ -20,15 +20,43 @@
     color: white;
 }
 
+#main-nav li:hover{
+    background: skyblue;
+}
+
 .nav-link{
     color: white;
     text-decoration: none;
 }
 
+#main-nav .hide-small{
+    display: none;
+}
+
+#hamburger, #close{
+    color: white;
+    position: relative;
+    font-size: 5vw;
+    margin-left: 1vw;
+    text-decoration: none;
+}
+
+
+#hamburger:visited{
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 813px){
     #main-nav ul{
+        text-align: center;
         flex-direction: row;
-        gap: 18vw;
+        gap: 9vw;
         font-size: 1vw;
+        margin-left: 15rem;
+    }
+
+    #hamburger, #close{
+        font-size: 2vw;
+        margin-left: 1vw;
     }
 }
