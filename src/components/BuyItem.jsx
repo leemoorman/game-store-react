@@ -1,7 +1,7 @@
 import './../css/BuyItem.css';
 
 const BuyItem = (buyItem) =>{
-    const imgSrc=`http://localhost:3001/${buyItem.img}`;
+    const imgSrc=`https://game-store-server-728j.onrender.com/${buyItem.img}`;
     return(
         <div className="product-card">
             <img src={imgSrc}/>

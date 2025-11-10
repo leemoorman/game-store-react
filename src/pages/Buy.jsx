@@ -8,7 +8,7 @@ const Buy = () =>{
     useEffect(() => {
         (async () =>{
             const response = await axios.get(
-                "http://localhost:3001/api/consoles/"
+                "https://game-store-server-728j.onrender.com/api/consoles"
             );
             setBuyItem(response.data);
         })();
