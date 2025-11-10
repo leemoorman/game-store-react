@@ -41,8 +41,8 @@
     }
     
     #slideshow img {
-        width: 75vw;
-        height: 50vh;
+        width: 75%;
+        min-height: 60vh;
         border-radius: 15px;
     }
 }

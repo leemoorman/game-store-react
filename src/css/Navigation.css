@@ -56,7 +56,6 @@
     }
 
     #hamburger, #close{
-        font-size: 2vw;
-        margin-left: 1vw;
+        display: none;
     }
 }

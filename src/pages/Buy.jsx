@@ -1,5 +1,5 @@
 import './../css/Buy.css';
-import BuyItem from './../components/BuyItem';
+import BuyItem from './../components/BuyItem'
 import React, {useState, useEffect} from "react";
 import axios from 'axios';
 
@@ -23,16 +23,16 @@ const Buy = () =>{
                     <h3>Hardware</h3>
                 </aside>
                 <section id="products">
-                    {buyItem.map((buyItem) =>{
+                    {buyItem.map((props) =>{
                        return( 
                         <BuyItem 
-                            key = {buyItem.name}
-                            name = {buyItem.name}
-                            price = {buyItem.price}
-                            stock = {buyItem.stock}
-                            description = {buyItem.description}
-                            rating = {buyItem.rating}
-                            img = {buyItem.img}
+                            key = {props.name}
+                            name = {props.name}
+                            price = {props.price}
+                            stock = {props.stock}
+                            description = {props.description}
+                            rating = {props.rating}
+                            img = {props.img}
                         />
                        );
                     })}

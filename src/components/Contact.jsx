@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './../css/Contact.css';
 
-export default function ContactForm() {
+export default function ContactForm(props) {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
@@ -36,7 +36,7 @@ export default function ContactForm() {
                 <input type="email" name="email" required/>
             </div>
             <div className="form-group">
-                <label for="message">Message: </label>
+                <label for="message">{props.name}: </label>
                 <textarea name="message" required></textarea>
             </div>
             <div className="form-btn">
