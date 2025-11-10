@@ -1,11 +1,12 @@
 import './../css/BuyItem.css';
 
-const BuyItem = (props) =>{
+const BuyItem = (buyItem) =>{
+    const imgSrc=`http://localhost:3001/${buyItem.img}`;
     return(
         <div className="product-card">
-            <img src={props.imgSrc} alt={props.imgAlt} />
+            <img src={imgSrc}/>
             <div className="product-info">
-                <p><strong>{props.name}</strong><br /><strong>Price: </strong> {props.price}<br /><strong>In Stock:</strong> {props.stock}<br /><strong>Review Score:</strong> {props.rating}<br />{props.description}</p>
+                <p><strong>{buyItem.name}</strong><br /><strong>Price: </strong> {buyItem.price}<br /><strong>In Stock:</strong> {buyItem.stock}<br /><strong>Review Score:</strong> {buyItem.rating}<br />{buyItem.description}</p>
             </div>
         </div>
     );

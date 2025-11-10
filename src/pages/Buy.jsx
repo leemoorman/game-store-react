@@ -1,8 +1,19 @@
 import './../css/Buy.css';
 import BuyItem from './../components/BuyItem';
-import XboxOne from './../console-images/xbox-one.png';
+import React, {useState, useEffect} from "react";
+import axios from 'axios';
 
 const Buy = () =>{
+    const [buyItem, setBuyItem] = useState([]);
+    useEffect(() => {
+        (async () =>{
+            const response = await axios.get(
+                "http://localhost:3001/api/consoles/"
+            );
+            setBuyItem(response.data);
+        })();
+    }, []);
+
     return(
         <main>
             <div id="store-container">
@@ -12,14 +23,19 @@ const Buy = () =>{
                     <h3>Hardware</h3>
                 </aside>
                 <section id="products">
-                    <BuyItem imgSrc={XboxOne} imgAlt="Console" name="Xbox One" price="149.99" stock="7" rating="3.8" description="An eighth-generation home video game console developed by Microsoft"/>
-                    <BuyItem imgSrc={XboxOne} imgAlt="Console" name="Xbox One" price="149.99" stock="7" rating="3.8" description="An eighth-generation home video game console developed by Microsoft"/>
-                    <BuyItem imgSrc={XboxOne} imgAlt="Console" name="Xbox One" price="149.99" stock="7" rating="3.8" description="An eighth-generation home video game console developed by Microsoft"/>
-                    <BuyItem imgSrc={XboxOne} imgAlt="Console" name="Xbox One" price="149.99" stock="7" rating="3.8" description="An eighth-generation home video game console developed by Microsoft"/>
-                    <BuyItem imgSrc={XboxOne} imgAlt="Console" name="Xbox One" price="149.99" stock="7" rating="3.8" description="An eighth-generation home video game console developed by Microsoft"/>
-                    <BuyItem imgSrc={XboxOne} imgAlt="Console" name="Xbox One" price="149.99" stock="7" rating="3.8" description="An eighth-generation home video game console developed by Microsoft"/>
-                    <BuyItem imgSrc={XboxOne} imgAlt="Console" name="Xbox One" price="149.99" stock="7" rating="3.8" description="An eighth-generation home video game console developed by Microsoft"/>
-                    <BuyItem imgSrc={XboxOne} imgAlt="Console" name="Xbox One" price="149.99" stock="7" rating="3.8" description="An eighth-generation home video game console developed by Microsoft"/>
+                    {buyItem.map((buyItem) =>{
+                       return( 
+                        <BuyItem 
+                            key = {buyItem.name}
+                            name = {buyItem.name}
+                            price = {buyItem.price}
+                            stock = {buyItem.stock}
+                            description = {buyItem.description}
+                            rating = {buyItem.rating}
+                            img = {buyItem.img}
+                        />
+                       );
+                    })}
                 </section>
             </div>
         </main>
