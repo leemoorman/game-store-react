@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/game-store-react/static/css/main.63785164.css",
-    "main.js": "/game-store-react/static/js/main.66ed3aad.js",
+    "main.js": "/game-store-react/static/js/main.5bc174f5.js",
     "static/media/slideshowtournament.png": "/game-store-react/static/media/slideshowtournament.3eeddf25c346365181ae.png",
-    "static/media/xbox-one.png": "/game-store-react/static/media/xbox-one.c0714ba1237c4aa63ce3.png",
     "static/media/game.png": "/game-store-react/static/media/game.d2b5994aa084d85e601e.png",
     "static/media/founder.png": "/game-store-react/static/media/founder.9b11b061fb098e9daff7.png",
     "static/media/display.png": "/game-store-react/static/media/display.6a1c77ca0c72728123ee.png",
@@ -15,10 +14,10 @@
     "static/media/sale.png": "/game-store-react/static/media/sale.e30dac85160b18dc39ad.png",
     "index.html": "/game-store-react/index.html",
     "main.63785164.css.map": "/game-store-react/static/css/main.63785164.css.map",
-    "main.66ed3aad.js.map": "/game-store-react/static/js/main.66ed3aad.js.map"
+    "main.5bc174f5.js.map": "/game-store-react/static/js/main.5bc174f5.js.map"
   },
   "entrypoints": [
     "static/css/main.63785164.css",
-    "static/js/main.66ed3aad.js"
+    "static/js/main.5bc174f5.js"
   ]
 }
