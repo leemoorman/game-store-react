@@ -1,0 +1,103 @@
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+
+.w3-modal {
+  display: flex; /* center content */
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgba(0,0,0,0.55);
+}
+
+/* Card */
+.w3-modal-content {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  box-shadow: none; /* remove heavy w3 shadow */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Close button: keep top-right but subtler */
+#dialog-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #111;
+}
+
+/* Two-column layout: image + content */
+.columns {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Image column */
+#dialog-image {
+  flex: 0 0 38%; /* similar to earlier preview sizing */
+  max-width: 38%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: none;
+  border: 1px solid #f0f0f0;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+/* Content column */
+#dialog-content {
+  flex: 1 1 58%;
+  min-width: 220px;
+  padding-right: 0.5rem;
+}
+
+#dialog-content h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0b0b0b;
+}
+
+#dialog-content p {
+  margin: 0.6rem 0;
+  line-height: 1.5;
+  color: #222;
+  font-size: 1rem;
+}
+
+/* Emphasize numeric fields */
+#dialog-content p:first-of-type,
+#dialog-content p:nth-of-type(2),
+#dialog-content p:nth-of-type(3) {
+  font-weight: 600;
+}
+
+/* Make description stand out a touch */
+#dialog-content p:last-of-type {
+  margin-top: 1rem;
+  color: #333;
+  font-weight: 400;
+}
+@media only screen and (min-width: 600px) {
+  #img-prev-section {
+    flex: 1;
+  }
+
+  #img-prev {
+    max-width: 100%;
+  }
+
+  #img-upload {
+    flex: 6;
+  }
+}

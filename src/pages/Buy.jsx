@@ -1,21 +1,46 @@
 import './../css/Buy.css';
 import BuyItem from './../components/BuyItem'
 import React, {useState, useEffect} from "react";
+import AddConsole from './../components/AddConsole';
 import axios from 'axios';
 
 const Buy = () =>{
-    const [buyItem, setBuyItem] = useState([]);
+    const [buyItems, setBuyItems] = useState([]);
+    const [showAddDialog, setShowAddDialog] = useState(false);
+
+    const openAddDialog = () =>{
+        setShowAddDialog(true);
+    }
+
+    const closeAddDialog = () =>{
+        setShowAddDialog(false);
+    }
+
+    const updateConsoles = (buyItem) => {
+        setBuyItems((buyItems)=>[...buyItems, buyItem]);
+    };
+
     useEffect(() => {
         (async () =>{
             const response = await axios.get(
+                //"https://game-store-server-728j.onrender.com/api/consoles"
                 "https://game-store-server-728j.onrender.com/api/consoles"
             );
-            setBuyItem(response.data);
+            setBuyItems(response.data);
         })();
     }, []);
 
     return(
         <main>
+            {showAddDialog?((console.log("dialog rendering"),
+                <AddConsole 
+                    closeDialog={closeAddDialog}
+                    updateConsoles={updateConsoles}
+                />)
+            ):("")}
+            <div id="button-container">
+                <button id="add-button"  onClick={openAddDialog}>+</button>
+            </div>
             <div id="store-container">
                 <aside id="sidebar">
                     <h3 id="active">Consoles</h3>
@@ -23,7 +48,7 @@ const Buy = () =>{
                     <h3>Hardware</h3>
                 </aside>
                 <section id="products">
-                    {buyItem.map((props) =>{
+                    {buyItems.map((props) =>{
                        return( 
                         <BuyItem 
                             key = {props.name}

@@ -6,15 +6,14 @@ const BuyItem = (props) =>{
     const [showDialog, setShowDialog] = useState(false);
 
     const showPopup = () =>{
-        console.log("showPopup clicked");
         setShowDialog(true);
     }
 
     const closePopup = () =>{
         setShowDialog(false);
     }
-
-    const imgSrc=`https://game-store-server-728j.onrender.com/${props.img}`;
+    //https://game-store-server-728j.onrender.com/${props.img}
+    const imgSrc=`http://localhost:3001/${props.img}`;
     return(
         <>
             {showDialog?((console.log("dialog rendering"),

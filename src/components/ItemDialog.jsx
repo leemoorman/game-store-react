@@ -1,7 +1,8 @@
-import './../css/ItemDialogue.css';
+import './../css/Dialog.css';
 
 const ItemDialogue = (props) => {
     return (
+        //https://game-store-server-728j.onrender.com/${props.img}
         <div id="item-dialog" className="w3-modal">
             <div className="w3-modal-content">
                 <div className="w3-container">
@@ -13,7 +14,7 @@ const ItemDialogue = (props) => {
                         &times;
                     </span>
                     <div className="columns">
-                        <img id="dialog-image" src={`https://game-store-server-728j.onrender.com/${props.img}`} alt="house" />
+                        <img id="dialog-image" src={`https://game-store-server-728j.onrender.com/${props.img}`} alt="console" />
                         <div id="dialog-content">
                             <h3>{props.name}</h3>
                             <p>Price: {props.price}</p>
