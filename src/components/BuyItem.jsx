@@ -13,7 +13,7 @@ const BuyItem = (props) =>{
         setShowDialog(false);
     }
     //https://game-store-server-728j.onrender.com/${props.img}
-    const imgSrc=`http://localhost:3001/${props.img}`;
+    const imgSrc=`https://game-store-server-728j.onrender.com/${props.img}`;
     return(
         <>
             {showDialog?((console.log("dialog rendering"),
