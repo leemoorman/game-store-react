@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/game-store-react/static/css/main.3ae7fda2.css",
-    "main.js": "/game-store-react/static/js/main.02344304.js",
+    "main.css": "/game-store-react/static/css/main.2daa3d8f.css",
+    "main.js": "/game-store-react/static/js/main.a00a694c.js",
     "static/media/slideshowtournament.png": "/game-store-react/static/media/slideshowtournament.3eeddf25c346365181ae.png",
     "static/media/game.png": "/game-store-react/static/media/game.d2b5994aa084d85e601e.png",
     "static/media/founder.png": "/game-store-react/static/media/founder.9b11b061fb098e9daff7.png",
@@ -13,11 +13,11 @@
     "static/media/tournament.png": "/game-store-react/static/media/tournament.dc43d6b96cc721d32c57.png",
     "static/media/sale.png": "/game-store-react/static/media/sale.e30dac85160b18dc39ad.png",
     "index.html": "/game-store-react/index.html",
-    "main.3ae7fda2.css.map": "/game-store-react/static/css/main.3ae7fda2.css.map",
-    "main.02344304.js.map": "/game-store-react/static/js/main.02344304.js.map"
+    "main.2daa3d8f.css.map": "/game-store-react/static/css/main.2daa3d8f.css.map",
+    "main.a00a694c.js.map": "/game-store-react/static/js/main.a00a694c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ae7fda2.css",
-    "static/js/main.02344304.js"
+    "static/css/main.2daa3d8f.css",
+    "static/js/main.a00a694c.js"
   ]
 }
