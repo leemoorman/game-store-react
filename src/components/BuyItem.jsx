@@ -42,7 +42,7 @@ const BuyItem = (props) =>{
         ):('')}
         {showConsole?(       
             <div className='product-card' onClick={showConsoleDetails}>
-                <img src={`http://localhost:3001/console-images/${console.img}`} alt="console" />
+                <img src={`https://game-store-server-728j.onrender.com/console-images/${props.img}`} alt="console" />
                 <section className='product-info'>
                     <p>
                         <strong>{console.name}</strong>
