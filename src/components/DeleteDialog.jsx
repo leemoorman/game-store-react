@@ -6,7 +6,7 @@ const DeleteDialog = (props) =>{
     const[result, setResult] = useState('');
 
     const deleteConsole = async() =>{
-        const response = await fetch(`http://localhost:3001/api/consoles/${props._id}`, {
+        const response = await fetch(`https://game-store-server-728j.onrender.com/api/consoles/${props._id}`, {
             method: "DELETE"
         });
 
