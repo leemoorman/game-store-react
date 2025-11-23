@@ -3,7 +3,7 @@ import './../css/Dialog.css';
 const DetailsDialog = (props) =>{
     return(
         <div className="columms">
-            <img id="dialog-image" src={"http://localhost:3001/console-images/" + props.img} alt="console" />
+            <img id="dialog-image" src={"https://game-store-server-728j.onrender.com/console-images/" + props.img} alt="console" />
             <div id="dialog-content">
                 <div className='columns'>
                     <h3>{props.name}</h3>

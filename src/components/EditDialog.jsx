@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 
 const EditDialog = (props) => {
     const [result, setResult] = useState('');
-    const [prevSrc, setPrevSrc] = useState("http://localhost:3001/console-images/" + props.img);
+    const [prevSrc, setPrevSrc] = useState("https://game-store-server-728j.onrender.com/console-images/" + props.img);
 
     const uploadImage = (event) =>{
         setPrevSrc(URL.createObjectURL(event.target.files[0]));
@@ -16,7 +16,7 @@ const EditDialog = (props) => {
         const formData = new FormData(event.target);
         console.log(...formData);
 
-        const response = await fetch(`http://localhost:3001/api/consoles/${props._id}` ,{
+        const response = await fetch(`https://game-store-server-728j.onrender.com/api/consoles/${props._id}` ,{
             method: "PUT",
             body: formData
         });

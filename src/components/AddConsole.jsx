@@ -21,7 +21,7 @@ const AddConsole = (props) => {
         const formData = new FormData(event.target);
         console.log(...formData);
 
-        const response = await fetch("http://localhost:3001/api/consoles", {
+        const response = await fetch("https://game-store-server-728j.onrender.com/api/consoles", {
             "method" : "post",
             "body" : formData
         });
