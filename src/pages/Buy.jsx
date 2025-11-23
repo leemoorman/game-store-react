@@ -27,7 +27,7 @@ const Buy = () =>{
                 //http://localhost:3001/api/consoles
                 //"https://game-store-server-728j.onrender.com/api/consoles"
                 
-                "http://localhost:3001/api/consoles"
+                "https://game-store-server-728j.onrender.com/api/consoles"
             );
             setBuyItems(response.data);
         })();

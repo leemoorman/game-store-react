@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 
 const EditDialog = (props) => {
     const [result, setResult] = useState('');
-    const [prevSrc, setPrevSrc] = useState("https://game-store-server-728j.onrender.com/console-images/" + props.img);
+    const [prevSrc, setPrevSrc] = useState(`https://game-store-server-728j.onrender.com/console-images/${props.img}`);
 
     const uploadImage = (event) =>{
         setPrevSrc(URL.createObjectURL(event.target.files[0]));
