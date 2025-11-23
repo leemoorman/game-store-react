@@ -3,37 +3,62 @@ import {useState} from "react";
 import ItemDialog from "./ItemDialog";
 
 const BuyItem = (props) =>{
+    const [console, setConsole] = useState(props);
+    const [showConsole, setShowConsole] = useState(true);
     const [showDialog, setShowDialog] = useState(false);
 
-    const showPopup = () =>{
+    const showConsoleDetails = () =>{
         setShowDialog(true);
     }
 
-    const closePopup = () =>{
+    const closeConsoleDetails = () =>{
         setShowDialog(false);
     }
+    
+    const updateConsole = (console) =>{
+        setConsole(console);
+    }
+
+    const hideConsole = () =>{
+        setShowConsole(false);
+    }
+    //http://localhost:3001/${props.img}
     //https://game-store-server-728j.onrender.com/${props.img}
-    const imgSrc=`https://game-store-server-728j.onrender.com/${props.img}`;
+    
     return(
         <>
-            {showDialog?((console.log("dialog rendering"),
-                <ItemDialog 
-                    closeItemDialog={closePopup}
-                    name = {props.name}
-                    price = {props.price}
-                    stock = {props.stock}
-                    description = {props.description}
-                    rating = {props.rating}
-                    img = {props.img}
-                />)
-            ):("")}
-            <div className="product-card" onClick={showPopup}>
-                <img src={imgSrc}/>
-                <div className="product-info">
-                    <p><strong>{props.name}</strong><br /><strong>Price: </strong> {props.price}<br /><strong>In Stock:</strong> {props.stock}<br /><strong>Review Score:</strong> {props.rating}<br />{props.description}</p>
-                </div>
+        {showDialog?(
+            <ItemDialog closeDialog={closeConsoleDetails}
+                _id = {console._id}
+                name = {console.name}
+                price = {console.price}
+                stock = {console.stock}
+                rating = {console.rating}
+                description = {console.description}
+                img = {console.img}
+                updateConsole = {updateConsole}
+                hideConsole = {hideConsole}
+            />
+        ):('')}
+        {showConsole?(       
+            <div className='product-card' onClick={showConsoleDetails}>
+                <img src={`http://localhost:3001/console-images/${console.img}`} alt="console" />
+                <section className='product-info'>
+                    <p>
+                        <strong>{console.name}</strong>
+                        <br />
+                        <strong>Price: </strong>{console.price}
+                        <br />
+                        <strong>In Stock: </strong>{console.stock}
+                        <br />
+                        <strong>Rating: </strong>{console.rating}
+                        <br />
+                        {console.description}
+                    </p>
+                </section>
             </div>
-        </>
+        ):('')}
+    </>
     );
 };
 

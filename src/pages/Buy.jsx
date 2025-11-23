@@ -23,8 +23,11 @@ const Buy = () =>{
     useEffect(() => {
         (async () =>{
             const response = await axios.get(
+                
+                //http://localhost:3001/api/consoles
                 //"https://game-store-server-728j.onrender.com/api/consoles"
-                "https://game-store-server-728j.onrender.com/api/consoles"
+                
+                "http://localhost:3001/api/consoles"
             );
             setBuyItems(response.data);
         })();
@@ -52,6 +55,7 @@ const Buy = () =>{
                        return( 
                         <BuyItem 
                             key = {props.name}
+                            _id = {props._id}
                             name = {props.name}
                             price = {props.price}
                             stock = {props.stock}

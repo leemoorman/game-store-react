@@ -1,0 +1,40 @@
+#no-button {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  #no-button:hover {
+    background-color: #bbb;
+  }
+
+  #yes-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  #yes-button:hover {
+    background-color: #c9302c;
+    transform: scale(1.05);
+  }
+
+
+#delete-dialog section {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
