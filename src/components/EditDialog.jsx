@@ -24,8 +24,8 @@ const EditDialog = (props) => {
         if(response.status === 200){
             setResult("Console Updated!");
             event.target.reset();
-            props.closeDialog();
             props.updateConsole(await response.json());
+            props.closeDialog();
         } else {
             setResult('Error Editing Consoles');
         }
