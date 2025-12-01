@@ -7,8 +7,8 @@ const DetailsDialog = (props) =>{
             <div id="dialog-content">
                 <div className='columns'>
                     <h3>{props.name}</h3>
-                    <a href="edit-link" onClick={props.showEdit}>&#9998;</a>
-                    <a href="delete-link" onClick={props.showDelete}>&#x1F5D1;</a>
+                    <button className="dialog-button" onClick={(e) => { e.preventDefault(); props.showEdit(e); }}>&#9998;</button>
+                    <button className="dialog-button" onClick={(e) => { e.preventDefault(); props.showDelete(e); }}>&#x1F5D1;</button>
                 </div>
                 <p>Price: {props.price}</p>
                 <p>Stock: {props.stock}</p>
