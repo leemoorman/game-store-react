@@ -52,6 +52,7 @@ const ItemDialogue = (props) => {
                                 stock = {props.stock}
                                 rating = {props.rating}
                                 description = {props.description}
+                                img = {props.img}
                                 closeDialog = {props.closeDialog}
                                 updateConsole = {props.updateConsole}
                                 />
